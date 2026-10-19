@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
@@ -165,9 +166,20 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-200 mt-14 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-gray-500 font-light">
+        <div className="border-t border-gray-200 mt-14 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-[11px] text-gray-500 font-light">
           <span>
             &copy; {new Date().getFullYear()} PARADISE OPTICS. ALL RIGHTS RESERVED.
+          </span>
+          <span>
+            Design & Developed by{" "}
+            <a
+              href="https://webstudiohub.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-gray-700 hover:text-[#8B1E22] transition-colors"
+            >
+              WebStudioHub
+            </a>
           </span>
           <div className="flex gap-6 font-normal">
             <Link to="/privacy-policy" className="hover:text-[#8B1E22] transition-colors">Privacy Policy</Link>
